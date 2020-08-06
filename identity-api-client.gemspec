@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('pry-byebug', ["~> 3.4"])
   s.add_development_dependency('webmock', ["~> 3.0", ">= 3.0.1"])
   s.add_development_dependency('rspec', ["~> 3.6"])
-  s.add_development_dependency('rdoc', ["~> 3.12"])
+  s.add_development_dependency('rdoc', ["~> 6.2"])
   s.add_development_dependency('bundler', [">= 0"])
   s.add_development_dependency('juwelier', [">= 0"])
   s.add_development_dependency('simplecov', [">= 0"])
