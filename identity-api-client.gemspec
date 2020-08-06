@@ -46,43 +46,15 @@ Gem::Specification.new do |s|
   s.rubygems_version = "3.0.8".freeze
   s.summary = "API Client for 38 Degree's Identity API".freeze
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 4
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<vertebrae>.freeze, ["> 0.5"])
-      s.add_development_dependency(%q<pry>.freeze, ["~> 0.10"])
-      s.add_development_dependency(%q<pry-byebug>.freeze, ["~> 3.4"])
-      s.add_development_dependency(%q<webmock>.freeze, ["~> 3.0", ">= 3.0.1"])
-      s.add_development_dependency(%q<rspec>.freeze, ["~> 3.6"])
-      s.add_development_dependency(%q<rdoc>.freeze, ["~> 3.12"])
-      s.add_development_dependency(%q<bundler>.freeze, [">= 0"])
-      s.add_development_dependency(%q<juwelier>.freeze, [">= 0"])
-      s.add_development_dependency(%q<simplecov>.freeze, [">= 0"])
-      s.add_development_dependency(%q<rubocop>.freeze, [">= 0"])
-    else
-      s.add_dependency(%q<vertebrae>.freeze, ["> 0.5"])
-      s.add_dependency(%q<pry>.freeze, ["~> 0.10"])
-      s.add_dependency(%q<pry-byebug>.freeze, ["~> 3.4"])
-      s.add_dependency(%q<webmock>.freeze, ["~> 3.0", ">= 3.0.1"])
-      s.add_dependency(%q<rspec>.freeze, ["~> 3.6"])
-      s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
-      s.add_dependency(%q<bundler>.freeze, [">= 0"])
-      s.add_dependency(%q<juwelier>.freeze, [">= 0"])
-      s.add_dependency(%q<simplecov>.freeze, [">= 0"])
-      s.add_dependency(%q<rubocop>.freeze, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<vertebrae>.freeze, ["> 0.5"])
-    s.add_dependency(%q<pry>.freeze, ["~> 0.10"])
-    s.add_dependency(%q<pry-byebug>.freeze, ["~> 3.4"])
-    s.add_dependency(%q<webmock>.freeze, ["~> 3.0", ">= 3.0.1"])
-    s.add_dependency(%q<rspec>.freeze, ["~> 3.6"])
-    s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
-    s.add_dependency(%q<bundler>.freeze, [">= 0"])
-    s.add_dependency(%q<juwelier>.freeze, [">= 0"])
-    s.add_dependency(%q<simplecov>.freeze, [">= 0"])
-    s.add_dependency(%q<rubocop>.freeze, [">= 0"])
-  end
+  s.add_runtime_dependency('vertebrae', ["> 0.5"])
+  s.add_development_dependency('pry', ["~> 0.10"])
+  s.add_development_dependency('pry-byebug', ["~> 3.4"])
+  s.add_development_dependency('webmock', ["~> 3.0", ">= 3.0.1"])
+  s.add_development_dependency('rspec', ["~> 3.6"])
+  s.add_development_dependency('rdoc', ["~> 3.12"])
+  s.add_development_dependency('bundler', [">= 0"])
+  s.add_development_dependency('juwelier', [">= 0"])
+  s.add_development_dependency('simplecov', [">= 0"])
+  s.add_development_dependency('rspec_junit_formatter', [">= 0"])
+  s.add_development_dependency('rubocop', [">= 0"])
 end
-
