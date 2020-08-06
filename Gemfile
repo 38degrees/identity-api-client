@@ -14,4 +14,5 @@ group :development do
   gem 'juwelier'
   gem 'simplecov', ">= 0"
   gem 'rubocop'
+  gem 'rspec_junit_formatter'
 end
