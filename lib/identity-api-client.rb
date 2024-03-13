@@ -26,17 +26,17 @@ module IdentityApiClient
 end
 
 # Monkey patch Vertebrae to allow us to deal with 404s ourselves
-module Vertebrae
-  module Response
-    class RaiseError < Faraday::Response::Middleware
-
-      def on_complete(response)
-        status_code = response[:status].to_i
-        return if status_code == 404
-        if (400...600).include? status_code
-          raise ResponseError.new(status_code, response)
-        end
-      end
-    end
-  end # Response::RaiseError
-end
+#module Vertebrae
+#  module Response
+#    class RaiseError < Faraday::Response::Middleware
+#
+#      def on_complete(response)
+#        status_code = response[:status].to_i
+#        return if status_code == 404
+#        if (400...600).include? status_code
+#          raise ResponseError.new(status_code, response)
+#        end
+#      end
+#    end
+#  end # Response::RaiseError
+#end
