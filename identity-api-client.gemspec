@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "3.0.8".freeze
   s.summary = "API Client for 38 Degree's Identity API".freeze
 
-  s.add_runtime_dependency('vertebrae', ["> 0.5"])
+  s.add_runtime_dependency('vertebrae', ["~> 1.0.5"])
   s.add_development_dependency('pry', ["~> 0.10"])
   s.add_development_dependency('pry-byebug', ["~> 3.4"])
   s.add_development_dependency('webmock', ["~> 3.0", ">= 3.0.1"])
