@@ -46,14 +46,14 @@ Gem::Specification.new do |s|
   s.rubygems_version = "3.0.8".freeze
   s.summary = "API Client for 38 Degree's Identity API".freeze
 
-  s.add_runtime_dependency('vertebrae', ["> 0.5"])
+  s.add_runtime_dependency('vertebrae', [">=0.8"])
   s.add_development_dependency('pry', [">= 0.10"])
   s.add_development_dependency('pry-byebug', [">= 3.4"])
   s.add_development_dependency('webmock', [">= 3.0.1"])
   s.add_development_dependency('rspec', [">= 3.6"])
   s.add_development_dependency('rdoc', [">= 6.2"])
   s.add_development_dependency('bundler', [">= 0"])
-  s.add_development_dependency('juwelier', [">= 0"])
+  s.add_development_dependency('juwelier', [">= 2.4.9"])
   s.add_development_dependency('simplecov', [">= 0"])
   s.add_development_dependency('rspec_junit_formatter', [">= 0"])
   s.add_development_dependency('rubocop', [">= 0"])
