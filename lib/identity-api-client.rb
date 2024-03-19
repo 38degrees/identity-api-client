@@ -26,9 +26,9 @@ end
 
 # Monkey patch Vertebrae to allow us to deal with 404s ourselves
 module Vertebrae
-  module Response
-    
+  module Response    
     class RaiseError < Faraday::Middleware
+      
       def on_complete(response)
         status_code = response[:status].to_i
         return if status_code == 404
