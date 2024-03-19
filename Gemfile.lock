@@ -148,14 +148,14 @@ DEPENDENCIES
   bundler
   identity-api-client!
   juwelier
-  pry (~> 0.10)
-  pry-byebug (~> 3.4)
-  rdoc (~> 6.2)
-  rspec (~> 3.6)
+  pry (>= 0.10)
+  pry-byebug (>= 3.4)
+  rdoc (>= 6.2)
+  rspec (>= 3.6)
   rspec_junit_formatter
   rubocop
   simplecov
-  webmock (~> 3.0, >= 3.0.1)
+  webmock (>= 3.0.1)
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
