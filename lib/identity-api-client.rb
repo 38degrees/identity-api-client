@@ -1,7 +1,7 @@
 require 'vertebrae'
 # dirty patch
 spec = Gem::Specification.find_by_name("vertebrae")
-require spec.gem_dir + '/lib/api.rb'
+require spec.gem_dir + '/lib/vertebrae/api.rb'
 require 'identity-api-client/base'
 require 'identity-api-client/mailing_api_base'
 
@@ -27,8 +27,8 @@ end
 # Monkey patch Vertebrae to allow us to deal with 404s ourselves
 module Vertebrae
   module Response
-    class RaiseError < Faraday::Response::Middleware
-
+    class RaiseError < Faraday::Middleware
+#    class RaiseError < Faraday::Response::RaiseError 
       def on_complete(response)
         status_code = response[:status].to_i
         return if status_code == 404
