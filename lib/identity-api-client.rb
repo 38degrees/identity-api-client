@@ -28,7 +28,7 @@ end
 module Vertebrae
   module Response
 #    class RaiseError < Faraday::Middleware
-    class RaiseError < Faraday:ResourceNotFound
+    class RaiseError < Faraday::ResourceNotFound
       def on_complete(response)
         status_code = response[:status].to_i
         return if status_code == 404
